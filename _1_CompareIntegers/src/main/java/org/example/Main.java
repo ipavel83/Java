@@ -11,13 +11,15 @@ public class Main {
     }
 
     private static void printEquality(int a, int b) {
-        if (a > b)
+        if (Comparer.aIsBigger(a, b))
             System.out.println("a > b");
-        else if (a < b)
+        else if (Comparer.aIsLess(a, b))
             System.out.println("a < b");
         else
             System.out.println("a = b");
     }
+
+
 
     private static void printOperations(int a, int b) {
         System.out.println("a + b = " + (a + b));
