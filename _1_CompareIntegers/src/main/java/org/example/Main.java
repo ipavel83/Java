@@ -1,8 +1,6 @@
 package org.example;
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         System.out.println("Enter int a:");
@@ -18,7 +16,7 @@ public class Main {
         else if (a < b)
             System.out.println("a < b");
         else
-            System.out.println("a =b");
+            System.out.println("a = b");
     }
 
     private static int inputInt() {
