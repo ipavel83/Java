@@ -1,13 +1,14 @@
 package org.example;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Enter int a:");
-        int a = inputInt();
-        System.out.println("Enter int b:");
-        int b = inputInt();
+        int a = inputNumber("a");
+        int b = inputNumber("b");
         printEquality(a, b);
+        printOperations(a, b);
+
     }
 
     private static void printEquality(int a, int b) {
@@ -16,12 +17,31 @@ public class Main {
         else if (a < b)
             System.out.println("a < b");
         else
-            System.out.println("a = b");
+            System.out.println("a = b" + a + " " + b);
     }
 
-    private static int inputInt() {
+    private static void printOperations(int a, int b) {
+        System.out.println("a + b = " + (a + b));
+        System.out.println("a - b = " + (a - b));
+        System.out.println("a / b = " + (a / b));
+        System.out.println("a * b = " + ((long) a * (long) b));
+    }
+
+    private static int inputNumber(String name) {
+        int a;
+        while (true) {
+            try {
+                System.out.println("Введите целое число " + name + ":");
+                a = inputIntegerFromConsole();
+                return a;
+            } catch (Exception e) {
+                System.out.println("Число не корректно");
+            }
+        }
+    }
+
+    private static int inputIntegerFromConsole() throws Exception {
         Scanner in = new Scanner(System.in);
-        int num = in.nextInt();
-        return num;
+        return in.nextInt();
     }
 }
