@@ -8,7 +8,6 @@ public class Main {
         int b = inputNumber("b");
         printEquality(a, b);
         printOperations(a, b);
-
     }
 
     private static void printEquality(int a, int b) {
@@ -17,7 +16,7 @@ public class Main {
         else if (a < b)
             System.out.println("a < b");
         else
-            System.out.println("a = b" + a + " " + b);
+            System.out.println("a = b");
     }
 
     private static void printOperations(int a, int b) {
