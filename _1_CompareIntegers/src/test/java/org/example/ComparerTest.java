@@ -9,11 +9,13 @@ class ComparerTest {
     @Test
     void aIsLess() {
         assertTrue(Comparer.aIsLessThanB(3, 4));
+        assertFalse(Comparer.aIsLessThanB(4, 3));
     }
 
     @Test
     void aIsBigger() {
         assertTrue(Comparer.aIsBiggerThanB(5, 4));
+        assertFalse(Comparer.aIsLessThanB(4, 3));
     }
 
     @Test
