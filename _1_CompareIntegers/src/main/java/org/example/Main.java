@@ -20,10 +20,10 @@ public class Main {
     }
 
     private static void printOperations(int a, int b) {
-        System.out.println("a + b = " + (a + b));
-        System.out.println("a - b = " + (a - b));
-        System.out.println("a / b = " + (a / b));
-        System.out.println("a * b = " + ((long) a * (long) b));
+        System.out.println("a + b = " + Calculator.summ(a,b));
+        System.out.println("a - b = " + Calculator.diff(a, b));
+        System.out.println("a / b = " + Calculator.div(a, b));
+        System.out.println("a * b = " + Calculator.mul(a, b));
     }
 
     private static int inputNumber(String name) {
