@@ -15,7 +15,7 @@ public class Main {
     }
 
     private static void printEquality(String a, String b) {
-        if (a.equals(b)) {
+        if (Comparer.isStringEquals(a, b)) {
             System.out.println("Строки идентичны");
         } else {
             System.out.println("Строки неидентичны");
